@@ -1,0 +1,358 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.container-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+  "header header header header"
+  "main main main main"
+  "footer footer footer footer"
+  ;
+}
+
+/* NAVBAR */
+
+.container-header{
+  grid-area: header; 
+}
+
+.logo img{
+  width: 250px;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.25rem;
+}
+
+.main-menu {
+  display: flex;
+  font-family: 'Rubik', sans-serif;
+  list-style: none;
+  align-items: center;
+}
+
+.main-menu li a {
+  display: flex;
+  margin: 1.25rem;
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+}
+
+.main-menu li a:hover{
+  color: #3F14EC;
+  cursor: pointer;
+}
+
+.translate-icon{
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar{
+  display: none;
+}
+
+.material-icons-round{
+  color: #3F14EC;
+}
+
+.material-icons-round:hover{
+  background-color: rgba(201, 199, 199, 0.175);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* INDEX */
+
+.main-container {
+  grid-area: main;
+  margin: auto;
+}
+
+.imagen__home {
+  width: 550px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.bajada__imagen {
+  margin-left: 35px;
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* ABOUT ME CSS */
+
+.left_container, .center_container, .rigth_container {
+  margin-top: 30px;
+  width: 33%;
+}
+
+.left_container {
+  padding: 250px 20px 0 20px;  
+}
+
+.center_container {
+  position: relative;
+  padding: 260px 50px 0 0;
+}
+
+.rigth_container {
+  padding: 90px 70px 70px 70px ;
+}
+
+.texto_destacado {
+  font-weight: 600;
+}
+
+.foto_miniatura {
+  position: absolute;
+  width: 150px;
+  top: 50%;
+  left: 35%;
+}
+
+.nombre {
+  margin-bottom: 3px;
+}
+
+.nombre__bajada {
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #3F14EC;
+  font-weight: 400;
+}
+
+.bibliografia, .texto-collections-destacado {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* PORTAFOLIO CSS */
+
+.main-container-portafolio{
+  margin: auto;
+  width: 95%;
+}
+
+.destacado{
+  margin-top: 30px;
+  display: inline-flex;
+}
+.destacado__imagen {
+  width: 45%;
+}
+
+.destacado__texto {
+  margin-left: 30px;
+}
+
+.imagenes, .imagenes-collections {
+  display:inline-flex;
+}
+
+.imagenes__card{
+  position: relative;
+  width: 200px;
+  margin: 10px;
+  position: relative;
+  top: 20px;
+  padding: 20px;
+}
+
+.imagenes__miniatura{
+  width: 200px;
+}
+
+.colecciones{
+  margin-top: 30px;
+}
+
+.colecciones__texto {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.colecciones__texto__destacado{
+  text-decoration: none;
+  color: #3F14EC;
+}
+
+/* CONTACT */
+
+.main-container-contact{
+  grid-area: main;
+  display: flex;
+}
+
+.contact-left, .contact-right {
+  width: 50%;
+}
+
+.contact-left{
+  padding-top: 280px;
+  padding-left: 50px;
+}
+
+.contact-right{
+  padding-top: 50px;
+  padding-right: 50px;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.input-text{
+  border: 2px solid black;
+  border-radius: 8px;
+  height: 2rem;
+}
+
+.cuerpo-text {
+  border: 2px solid black;
+  border-radius: 8px;
+  height: 7rem;
+}
+
+.text-form{
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-button{
+  border-style: none;
+  text-align: center;
+  border: 2px solid #3F14EC;
+  background-color: white;
+  color: #3F14EC;
+  font-weight: bold;
+  border-radius: 8px;
+  height: 2rem;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.form-button:hover{
+  background-color: #3F14EC;
+  color: white;
+
+}
+
+/* COLLECTIONS */
+
+.titles{
+  display: flex;
+}
+
+.titles__texto{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 15px 20px 15px;
+}
+
+.destacado-collections{
+  display: flex;
+}
+
+.destacado__imagen__collections{
+  width: 40%;
+  margin-left: 20px;
+}
+
+.destacado__texto{
+  padding-top: 130px;
+  margin: 80px;
+}
+
+/* FOOTER */
+
+footer{
+  grid-area: footer;
+  padding: 1.25rem;
+  font-family: 'Space Grotesk', sans-serif;
+  text-align: end;
+}
+
+@media screen and (max-width: 600px){
+
+  .menu-bar{
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img{
+    width: 150px;
+    margin: auto;
+  }
+
+  .main-menu{
+    display: none;
+  }
+
+  .translate-icon{
+    display: none;
+  }
+
+  .imagen__home {
+    margin-top: 50px;
+    align-items: center;
+    width: 300px;
+  }
+
+  footer{
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* CONTACT */
+
+  .main-container-contact{
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-left{
+  font-size: 14px;
+  width: 100%;
+  margin-top: 100px;
+  align-items: center;
+  padding-top: 0px;
+  margin-left: 30px;
+}
+
+.contact-right{
+  padding-top: 0;
+  width: 100%;
+  margin-left: 50px;
+}
+
+  
+
+  
+
+
+  
+}
