@@ -265,9 +265,22 @@ body {
 
 .titles__texto{
   text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 600;
-  margin: 20px 15px 20px 15px;
+  font-size: 65px;
+  font-weight: bold;
+  margin: 40px 50px 20px 50px;
+  animation: typetransition 9s infinite linear;
+}
+
+@keyframes typetransition {
+
+  0% { 
+      transform: translate(0px, 0);
+      transition: all 9s linear;
+    }
+  100% { 
+    transform: translate(-1000px, 0);
+    transition: all 9s linear;
+    }
 }
 
 .destacado-collections{
@@ -276,7 +289,7 @@ body {
 
 .destacado__imagen__collections{
   width: 40%;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 .destacado__texto{
