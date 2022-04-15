@@ -1,6 +1,8 @@
 //IMPORT 
 @import "_variables-globales";
 
+$hover: #3F14EC;
+
 *{
   margin: 0;
   padding: 0;
@@ -25,37 +27,36 @@ body {
 
 .container-header{
   grid-area: header; 
-}
 
-.logo img{
-  width: 250px;
-}
+    .logo img{
+      width: 250px;
+  }
 
-.container-nav {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 1.25rem;
-}
+  .container-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.25rem;
+  }
 
-.main-menu {
-  display: flex;
-  font-family: 'Rubik', sans-serif;
-  list-style: none;
-  align-items: center;
-}
+  .main-menu {
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    list-style: none;
+    align-items: center;   
+  }
 
-.main-menu li a {
-  display: flex;
-  margin: 1.25rem;
-  text-decoration: none;
-  font-size: 14px;
-  color: black;
-  font-weight: 500;
-}
-
-.main-menu li a:hover{
-  color: #3F14EC;
-  cursor: pointer;
+  .main-menu li a {
+    display: flex;
+    margin: 1.25rem;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+    &:hover{
+      color: $hover;
+      cursor: pointer;
+    }
+  }
 }
 
 .translate-icon{
@@ -69,12 +70,41 @@ body {
 
 .material-icons-round{
   color: #3F14EC;
+  &:hover{
+    background-color: rgba(201, 199, 199, 0.175);
+    padding: 10px;
+    border-radius: 8px;
+  }
 }
 
-.material-icons-round:hover{
-  background-color: rgba(201, 199, 199, 0.175);
-  padding: 10px;
-  border-radius: 8px;
+.hamburger {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: black;
+  margin-block: 10px;
+  border-radius: 4px;
+  transition: transform .5s, 
+  opacity .25s;
+}
+
+.hamburger.active .line:nth-child(1){
+  transform: translateY(13px)
+  rotate(45deg);
+}
+.hamburger.active .line:nth-child(2){
+  opacity: 0;
+}
+.hamburger.active .line:nth-child(3){
+  transform: translateY(-13px)
+  rotate(45deg);
 }
 
 /* INDEX */
@@ -104,13 +134,19 @@ body {
 
 /* ABOUT ME CSS */
 
-.left_container, .center_container, .rigth_container {
-  margin-top: 30px;
-  width: 33%;
+.main-container-aboutme{
+  display: flex; 
+  $margin-top: 30px; 
+  $width: 32%;
+
+    .left_container, .center_container, .rigth_container {
+      margin-top: $margin-top;
+      width: $width;
+    }
 }
 
 .left_container {
-  padding: 250px 20px 0 20px;  
+  padding: 250px 20px 0 50px;  
 }
 
 .center_container {
@@ -119,7 +155,7 @@ body {
 }
 
 .rigth_container {
-  padding: 90px 70px 70px 70px ;
+  padding: 90px 70px 70px 50px ;
 }
 
 .texto_destacado {
@@ -217,21 +253,23 @@ body {
 .main-container-contact{
   grid-area: main;
   display: flex;
+
+  .contact-left, .contact-right {
+    width: 50%;
+  }
+
+  .contact-left{
+    padding-top: 280px;
+    padding-left: 50px;
+  }
+
+  .contact-right{
+    padding-top: 50px;
+    padding-right: 50px;
+  }
+  
 }
 
-.contact-left, .contact-right {
-  width: 50%;
-}
-
-.contact-left{
-  padding-top: 280px;
-  padding-left: 50px;
-}
-
-.contact-right{
-  padding-top: 50px;
-  padding-right: 50px;
-}
 
 .contact-form{
   display: flex;
@@ -268,12 +306,10 @@ body {
   height: 2rem;
   font-size: 13px;
   margin-top: 10px;
-}
-
-.form-button:hover{
-  background-color: #3F14EC;
-  color: white;
-
+  &:hover{
+    background-color: $hover;
+    color: white;
+  }
 }
 
 /* COLLECTIONS */
@@ -333,7 +369,6 @@ footer {
   p{
     margin-bottom: 0;
   }
-
 }
 
 
@@ -368,12 +403,20 @@ footer {
     width: 300px;
   }
 
+  /* INDEX */ 
+
+
+  .carousel-inner {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
+
   footer{
     font-size: 14px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 60px;
   }
 
   footer p {
