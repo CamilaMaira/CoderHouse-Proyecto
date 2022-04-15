@@ -1,8 +1,6 @@
 //IMPORT 
 @import "_variables-globales";
 
-
-
 *{
   margin: 0;
   padding: 0;
@@ -97,6 +95,11 @@ body {
   margin-top: 5px;
   font-size: 13px;
   font-weight: 300;
+}
+
+.carousel-inner {
+  margin-left: 10rem;
+  margin-bottom: 5rem;
 }
 
 /* ABOUT ME CSS */
@@ -196,6 +199,17 @@ body {
 .colecciones__texto__destacado{
   text-decoration: none;
   color: #3F14EC;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+
+  p {
+    font-size: 14px;
+    text-decoration: underline;
+    margin-left: 2rem;
+  }
 }
 
 /* CONTACT */
@@ -321,7 +335,6 @@ footer {
   }
 
 }
-
 
 
 .collapse navbar-collapse {

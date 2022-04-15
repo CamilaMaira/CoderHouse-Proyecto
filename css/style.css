@@ -88,6 +88,11 @@ body {
   font-weight: 300;
 }
 
+.carousel-inner {
+  margin-left: 10rem;
+  margin-bottom: 5rem;
+}
+
 /* ABOUT ME CSS */
 .left_container, .center_container, .rigth_container {
   margin-top: 30px;
@@ -184,6 +189,16 @@ body {
 .colecciones__texto__destacado {
   text-decoration: none;
   color: #3F14EC;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+.item p {
+  font-size: 14px;
+  text-decoration: underline;
+  margin-left: 2rem;
 }
 
 /* CONTACT */
