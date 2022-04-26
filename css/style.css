@@ -65,10 +65,27 @@ body {
 .main-container {
   grid-area: main;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .carousel-inner {
   margin: 4rem 0 4rem 4rem;
+}
+.carousel-inner .item-img {
+  width: 100%;
+  height: 320px !important;
+}
+
+.rrss-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 3rem;
+}
+.rrss-sidebar img {
+  width: 20px;
+  margin: 10px;
 }
 
 /* ABOUT ME CSS */
@@ -242,6 +259,7 @@ body {
 /* COLLECTIONS */
 .titles {
   display: flex;
+  overflow-y: auto;
 }
 
 .titles__texto {
