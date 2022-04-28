@@ -1,3 +1,20 @@
 $body-font: 'Space Grotesk', sans-serif;
 $color: #3F14EC;
 $hover: #3F14EC;
+
+$estilos: (
+  'hover-color': #3F14EC,
+  'fuente-body': 14px,
+  'radio-boton': 8px, 
+);
+
+@mixin flexboxCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin flexAlignCenter {
+  display: flex;
+  align-items: center;
+}

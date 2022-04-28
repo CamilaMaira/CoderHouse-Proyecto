@@ -92,13 +92,11 @@ body {
 .main-container-aboutme {
   display: flex;
 }
-.main-container-aboutme .left_container, .main-container-aboutme .center_container, .main-container-aboutme .rigth_container {
-  margin-top: 30px;
-  width: 32%;
-}
-
-.left_container {
-  padding: 250px 20px 0 50px;
+.main-container-aboutme .left_container, .main-container-aboutme .rigth_container {
+  width: 33%;
+  padding: 200px 20px 0 50px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .center_container {
@@ -112,7 +110,7 @@ body {
 }
 
 .rigth_container {
-  padding: 90px 70px 70px 50px;
+  padding: 90px 70px 0 50px !important;
 }
 
 .texto_destacado {
@@ -362,6 +360,7 @@ footer p {
   }
   .main-container-aboutme .center_container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
   .main-container-aboutme .center_container img {
