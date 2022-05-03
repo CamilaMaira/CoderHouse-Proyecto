@@ -71,38 +71,44 @@
       </nav>
     </header>
 
-  <main class="main-container-contact">
-    <article class="contact-left">
-      <p class="texto_destacado">También me puedes enviar una carta</p>
-      <p>Av. Siempreviva #123, Santiago · Chile</p>
-      <br>
-      <p class="texto_destacado">Este es mi mail</p>
-      <p>miguel.maira@gmail.com</p>
-      <br>
-      <p class="texto_destacado">Y este es mi número de trabajo</p>
-      <p>+569 1122 3344</p>
-    </article>
 
-    <article class="contact-right">
-      <form action="mail-info.php" class="contact-form">
+    <section class="main-container">
+      <div class="textos-contact">
+        <p class="texto_destacado">También me puedes enviar una carta</p>
+        <p>Av. Siempreviva #123, Santiago · Chile</p>
+    
+        <p class="texto_destacado">Este es mi mail</p>
+        <p>miguel.maira@gmail.com</p>
+  
+        <p class="texto_destacado">Y este es mi número de trabajo</p>
+        <p>+569 1122 3344</p>
+      </div>
 
+      <div class="formulario">
+        <form action="mail-info.php" class="contact-form">
           <label for="nombre" class="text-form">Nombre</label>
           <input type="text" name="nombre" class="input-text">
-        
+          
           <label for="email" class="text-form">Email</label>
           <input type="email" name="email" class="input-text">
 
           <label for="subject" class="text-form">Subject</label>
           <input type="text" name="subject" class="input-text">
-        
+          
           <label for="message" class="text-form">Escribeme;) </label>
           <input type="text" name="mensaje" class="cuerpo-text">
-      
         
           <input type="button" value="Enviar" class="form-button">
       </form>
-    </article>
+    </div>
   </main>
+
+  <div class="rrss-sidebar">
+    <a href="https://www.instagram.com/migue.maira" target="_blank"><img src="../assets/img/instagram.svg" alt=""></a>
+    <img src="../assets/img/linkedin.svg" alt="">
+    <img src="../assets/img/envelope.svg" alt="">
+  </div>
+</section>
 
   <footer>
     <p>todos los derechos reservados</p>

@@ -64,13 +64,13 @@ body {
 /* INDEX */
 .main-container {
   grid-area: main;
-  margin: auto;
   display: flex;
   justify-content: space-between;
 }
 
 .carousel-inner {
   margin: 4rem 0 4rem 4rem;
+  width: 100%;
 }
 .carousel-inner .item-img {
   width: 100%;
@@ -197,26 +197,29 @@ body {
 }
 
 /* CONTACT */
-.main-container-contact {
-  grid-area: main;
+.main-container {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.main-container-contact .contact-left, .main-container-contact .contact-right {
-  width: 50%;
+
+.textos-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-left: 8rem;
+  width: 40rem;
 }
-.main-container-contact .contact-left {
-  padding-top: 280px;
-  padding-left: 50px;
-}
-.main-container-contact .contact-right {
-  padding-top: 50px;
-  padding-right: 50px;
+
+.formulario {
+  width: 40rem;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  padding-left: 20px;
+  padding-right: 25px;
 }
 
 .input-text {
@@ -314,6 +317,10 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
+  .main-container {
+    display: block;
+  }
+
   .carousel-inner {
     margin: 4rem 0 2rem 0;
   }
@@ -323,7 +330,7 @@ footer p {
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
+    padding-top: 0;
   }
   footer p {
     margin-bottom: 0px;
@@ -331,21 +338,24 @@ footer p {
 
   /* CONTACT */
   .main-container-contact {
-    grid-area: main;
+    margin: 0;
     display: flex;
     flex-direction: column;
     padding: 0;
   }
-  .main-container-contact .contact-left {
-    padding: 0;
+
+  .textos-contact {
+    padding-left: 0;
+    width: 25rem;
     margin: 40px 0 0 50px;
     font-size: 14px;
     align-items: center;
   }
-  .main-container-contact .contact-right {
+
+  .formulario {
     padding-top: 0;
-    width: 100%;
-    margin-left: 20px;
+    width: 30rem;
+    margin-left: 10px;
   }
 
   /* ABOUT ME */
@@ -368,6 +378,13 @@ footer p {
   }
   .main-container-aboutme .rigth_container {
     padding: 50px;
+  }
+
+  .rrss-sidebar {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+    margin-top: 100px;
   }
 }
 

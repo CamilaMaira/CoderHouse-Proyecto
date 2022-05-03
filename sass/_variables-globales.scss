@@ -18,3 +18,10 @@ $estilos: (
   display: flex;
   align-items: center;
 }
+
+@mixin mainContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+}
