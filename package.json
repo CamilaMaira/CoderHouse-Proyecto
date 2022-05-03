@@ -1,0 +1,23 @@
+{
+  "name": "mmav---coderhouse",
+  "version": "1.0.0",
+  "description": "proyecto final para coderhouse",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamilaMaira/CoderHouse-Proyecto.git"
+  },
+  "author": "Camila Maira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamilaMaira/CoderHouse-Proyecto/issues"
+  },
+  "homepage": "https://github.com/CamilaMaira/CoderHouse-Proyecto#readme",
+  "devDependencies": {
+    "dart-sass": "^1.25.0",
+    "nodemon": "^2.0.16"
+  }
+}
