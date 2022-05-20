@@ -93,7 +93,6 @@ body {
   display: flex;
 }
 .main-container-aboutme .left_container, .main-container-aboutme .rigth_container {
-  width: 33%;
   padding: 200px 20px 0 50px;
   margin-left: 30px;
   margin-right: 30px;

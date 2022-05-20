@@ -34,8 +34,6 @@ body {
   }
 }
 
-
-
 .container-header{
   grid-area: header; 
 }
@@ -111,7 +109,6 @@ body {
   $width: 33%;
 
     .left_container {
-      width: $width;
       padding: 200px 20px 0 50px;  
       margin-left: 30px;
       margin-right: 30px;
