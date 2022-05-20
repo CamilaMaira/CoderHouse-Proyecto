@@ -28,11 +28,13 @@ body {
     font-size: 14px;
     font-weight: 600;
     color: black !important;
-    &:hover{
-      color: $hover !important;
+      &:hover{
+        color: $hover !important;
     }
   }
 }
+
+
 
 .container-header{
   grid-area: header; 
@@ -234,6 +236,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow-x: hidden;
 }
 
 .textos-contact {
@@ -295,6 +298,7 @@ body {
 .titles{
   display: flex;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .titles__texto{

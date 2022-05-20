@@ -209,6 +209,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow-x: hidden;
 }
 
 .textos-contact {
@@ -269,6 +270,7 @@ body {
 .titles {
   display: flex;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .titles__texto {
