@@ -76,7 +76,6 @@ body {
 
 .main-container {
   grid-area: main;
-
   display: flex;
   justify-content: space-between;
 }
@@ -291,6 +290,10 @@ body {
 }
 
 /* COLLECTIONS */
+
+.collection-container{
+  overflow-y:hidden
+}
 
 .titles{
   display: flex;

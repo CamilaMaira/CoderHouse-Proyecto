@@ -266,6 +266,10 @@ body {
 }
 
 /* COLLECTIONS */
+.collection-container {
+  overflow-y: hidden;
+}
+
 .titles {
   display: flex;
   overflow-y: auto;
