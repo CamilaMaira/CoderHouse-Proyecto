@@ -101,7 +101,10 @@ body {
 
   img {
     width: 20px;
-    margin: 10px
+    margin: 10px;
+    &:hover{
+    cursor: pointer;
+  }
   }
 }
 
@@ -198,7 +201,7 @@ body {
   .imagenes__card{
     position: relative;
     width: 200px;
-    margin: 10px;
+    margin: 40px;
     position: relative;
     padding: 20px;
   
@@ -270,6 +273,7 @@ body {
   border: 2px solid black;
   border-radius: map-get($map: $estilos, $key: radio-boton);
   height: 2rem;
+  caret-color: gold;
 }
 
 .cuerpo-text {
@@ -311,15 +315,25 @@ body {
   display: flex;
   overflow-y: auto;
   overflow-x: hidden;
+  a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover{
+      color: black;
+      text-decoration: underline 0.15em;
+      }
+  }
+
+  .titles__texto{
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: bold;
+    margin: 40px 50px 20px 50px;
+    animation: typetransition 9s infinite linear;
+  }
 }
 
-.titles__texto{
-  text-transform: uppercase;
-  font-size: 65px;
-  font-weight: bold;
-  margin: 40px 50px 20px 50px;
-  animation: typetransition 9s infinite linear;
-}
 
 @keyframes typetransition {
 
@@ -354,6 +368,7 @@ body {
 
 footer {
   grid-area: footer;
+  margin-top: 40px;
   padding: 1.25rem;
   font-family: 'Space Grotesk', sans-serif;
   display: flex;
@@ -373,28 +388,6 @@ footer {
   display: flex;
   justify-content: flex-end;
 }
-
-// @media screen and (max-width: 800px) {
-//   .main-container-contact{
-//     grid-area: main;
-//     display: flex;
-//     flex-direction: column;
-//     padding: 0;
-  
-//     .contact-left{
-//       padding: 0;
-//       margin: 40px 0 0 50px ;
-//       font-size: 14px;
-//       align-items: center;
-//     }
-  
-//     .contact-right{
-//       padding-top: 0;
-//       width: 100%;
-//       margin-left: 20px;
-//     }
-//   }
-// }
 
 
 @media screen and (max-width: 600px){

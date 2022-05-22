@@ -91,6 +91,9 @@ body {
   width: 20px;
   margin: 10px;
 }
+.rrss-sidebar img:hover {
+  cursor: pointer;
+}
 
 /* ABOUT ME CSS */
 .main-container-aboutme {
@@ -175,7 +178,7 @@ body {
 .imagenes-collections .imagenes__card {
   position: relative;
   width: 200px;
-  margin: 10px;
+  margin: 40px;
   position: relative;
   padding: 20px;
 }
@@ -243,6 +246,7 @@ body {
   border: 2px solid black;
   border-radius: 8px;
   height: 2rem;
+  caret-color: gold;
 }
 
 .cuerpo-text {
@@ -284,8 +288,16 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
 }
-
-.titles__texto {
+.titles a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.titles a:hover {
+  color: black;
+  text-decoration: underline 0.15em;
+}
+.titles .titles__texto {
   text-transform: uppercase;
   font-size: 65px;
   font-weight: bold;
@@ -320,6 +332,7 @@ body {
 /* FOOTER */
 footer {
   grid-area: footer;
+  margin-top: 40px;
   padding: 1.25rem;
   font-family: "Space Grotesk", sans-serif;
   display: flex;
