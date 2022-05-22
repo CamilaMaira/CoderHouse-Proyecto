@@ -211,6 +211,16 @@ body {
   }
 }
 
+.card-body{
+  a{
+    color: initial;
+    &:hover{
+      color: black;
+      font-weight: 600;
+    }
+  }
+}
+
 .destacado-text{
   display: none;
 }
@@ -361,6 +371,15 @@ body {
     font-size: 24px;
     font-weight: 400;
   }
+}
+
+/* EN CONSTRUCCIÓN */
+
+.main-container-construccion{
+  display: grid;
+  place-items: center;
+  height: 450px;
+  color: #404040;
 }
 
 
